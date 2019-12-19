@@ -514,7 +514,7 @@ function toHex(n: number) {
 
 const Proto = Blake2b
 
-function createHash(
+function blake2b(
   outlen: number,
   key: string | any[] | null,
   salt: string | any[] | null,
@@ -558,8 +558,8 @@ let PERSONALBYTES = 16
 // const PERSONAL = textEncoder.encode('ckb-default-hash')
 // console.log(PERSONAL)
 
-// const hash = createHash(32, null, null, PERSONAL, true)
+// const hash = blake2b(32, null, null, PERSONAL, true)
 
 // console.log(hash.update(new Uint8Array()).digest('hex'))
 
-export default createHash
+export default blake2b

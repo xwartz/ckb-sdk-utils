@@ -1,12 +1,14 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./node_modules/@cryptape/sdk-ts-config/tsconfig.json",
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es6",
     "outDir": "lib",
-    "lib": ["es2017"],
     "typeRoots": ["types", "node_modules/@types", "node_modules"],
-    "types": ["@nervosnetwork/ckb-types", "node", "blake2b-wasm"]
+    "lib": ["es6", "es2017"],
+    "types": ["@nervosnetwork/ckb-types", "node", "blake2b-wasm"],
+    "esModuleInterop": true,
+    "sourceMap": true
   },
   "include": ["src"],
 }
