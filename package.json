@@ -32,19 +32,18 @@
   },
   "dependencies": {
     "@nervosnetwork/ckb-types": "0.26.2",
-    "blake2b-wasm": "1.1.7",
     "elliptic": "6.5.1",
     "jsbi": "^3.1.1",
     "nanoassert": "^2.0.0",
     "util": "^0.12.1"
   },
   "devDependencies": {
+    "@cryptape/sdk-ts-config": "0.0.1",
     "@types/bitcoinjs-lib": "4.0.1",
     "@types/elliptic": "6.4.8",
     "@types/nanoassert": "^2.0.0",
-    "@types/utf8": "2.1.6",
-    "@cryptape/sdk-ts-config": "0.0.1",
     "@types/node": "12.12.6",
+    "@types/utf8": "2.1.6",
     "@typescript-eslint/eslint-plugin": "2.6.1",
     "@typescript-eslint/parser": "2.6.1",
     "commitizen": "4.0.3",
